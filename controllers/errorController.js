@@ -31,7 +31,7 @@ const sendErrorProd= (err, req, res)=>{
         })
     }
     // Programming or other unkown error: don't leak error details
-    console.log(err);
+    // console.log(err);
     return res.status(500).json({
         status: 'Fail',
         message: 'Something went wrong'

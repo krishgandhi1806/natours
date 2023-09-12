@@ -80,7 +80,7 @@ exports.updateUserData= catchAsync(async(req,res, next)=>{
         new: true,
         runValidators: true
     });
-    console.log(updatedUser);
+    // console.log(updatedUser);
 
     res.status(200).render('user',{
         title: "Your Account",
